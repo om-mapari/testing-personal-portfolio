@@ -481,6 +481,15 @@ main {
     color: var(--light-gray);
 }
 
+.social-item .social-link img {
+    filter: invert(1) brightness(0.7);
+    transition: filter var(--transition-1);
+}
+
+.social-item .social-link:hover img {
+    filter: invert(1) brightness(1);
+}
+
 /*-----------------------------------*\
   #NAVBAR
 \*-----------------------------------*/
