@@ -5,7 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Om Mapari - Personal Portfolio</title>
+  <title>Om Mapari - Software Engineer | DevSecOps & AWS Cloud</title>
+  <meta name="description"
+    content="Om Mapari - Software Engineer (SDE-2) at Barclays specializing in DevSecOps, AWS Cloud, and Full-Stack Engineering. Building secure, scalable systems.">
+  <meta name="author" content="Om Mapari">
+  <link rel="canonical" href="https://om-mapari.com">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Om Mapari - Software Engineer">
+  <meta property="og:description"
+    content="Software Engineer at Barclays specializing in DevSecOps, AWS Cloud, and Full-Stack Engineering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://om-mapari.com">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@coder_om">
+  <meta name="twitter:title" content="Om Mapari - Software Engineer">
 
   <!--
     - emailjs
@@ -130,35 +146,38 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://github.com/om-mapari" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
+            <a href="https://github.com/om-mapari" class="social-link" target="_blank" rel="me noopener"
+              aria-label="GitHub"></a>
+            <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://brain.om-mapari.com" class="social-link" target="_blank">
+            <a href="https://brain.om-mapari.com" class="social-link" target="_blank" rel="me noopener"
+              aria-label="Knowledge Base">
               <img src="./assets/images/brain-svgrepo-com.svg" alt="Digital Garden" width="20" height="20">
             </a>
           </li>
-          <li class="social-item">
 
-            <a href="https://www.linkedin.com/in/om-mapari/" class="social-link" target="_blank">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/om-mapari/" class="social-link" target="_blank" rel="me noopener"
+              aria-label="LinkedIn">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://x.com/coder_om" class="social-link" target="_blank">
+            <a href="https://x.com/coder_om" class="social-link" target="_blank" rel="me noopener" aria-label="Twitter">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://om-mapari.com" class="social-link" target="_blank">
-              <ion-icon name="globe-outline"></ion-icon>
+            <a href="https://om-mapari.com" class="social-link" target="_blank" rel="me noopener"
+              aria-label="Website"></a>
+            <ion-icon name="globe-outline"></ion-icon>
             </a>
           </li>
-
 
         </ul>
 
@@ -204,6 +223,11 @@
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
+          <li class="navbar-item">
+            <a href="https://brain.om-mapari.com" class="navbar-link" rel="me" target="_blank"
+              style="text-decoration: none;">Notes ↗</a>
+          </li>
+
         </ul>
 
       </nav>
@@ -243,6 +267,37 @@
             Driven by a bias toward action, I continuously build cloud-native, AI-powered projects with a simple
             philosophy: build it right, ship it fast, and scale it safely.
           </p>
+
+          <a href="https://brain.om-mapari.com" rel="me" target="_blank" class="knowledge-base-card" style="
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding: 0.875rem 1.25rem;
+            background: hsl(240, 2%, 15%);
+            border-radius: 10px;
+            border: 1px solid hsl(0, 0%, 22%);
+            text-decoration: none;
+            transition: all 0.25s ease;
+          ">
+            <span style="font-size: 1.25rem;">🧠</span>
+            <span style="flex: 1; color: hsl(0, 0%, 84%); font-size: 0.9rem;">
+              <strong style="color: hsl(0, 0%, 98%);">Fork My Brain</strong> — My public notes on AWS, Frontend,
+              Backend, System Design, K8s, DevOps
+            </span>
+            <span style="color: hsl(45, 54%, 58%); font-size: 1rem; transition: transform 0.25s ease;">→</span>
+          </a>
+          <style>
+            .knowledge-base-card:hover {
+              border-color: hsl(45, 54%, 58%, 0.4);
+              transform: translateY(-2px);
+              box-shadow: 0 8px 24px hsl(0, 0%, 0%, 0.3);
+            }
+
+            .knowledge-base-card:hover div:last-child {
+              transform: translateX(4px);
+            }
+          </style>
         </section>
 
 
@@ -1321,6 +1376,22 @@
 
 
 
+
+  <!--
+    - footer
+  -->
+  <footer
+    style="text-align: center; padding: 2rem 1rem; margin-top: 2rem; border-top: 1px solid hsl(0, 0%, 22%); color: hsl(0, 0%, 62%);">
+    <p style="margin: 0 0 0.5rem 0; font-size: 0.9rem;">
+      © 2025 Om Mapari ·
+      <a href="https://brain.om-mapari.com" rel="me" target="_blank"
+        style="color: hsl(45, 54%, 58%); text-decoration: none;">Knowledge Base</a> ·
+      <a href="https://github.com/om-mapari" target="_blank"
+        style="color: hsl(45, 54%, 58%); text-decoration: none;">GitHub</a> ·
+      <a href="https://linkedin.com/in/om-mapari" target="_blank"
+        style="color: hsl(45, 54%, 58%); text-decoration: none;">LinkedIn</a>
+    </p>
+  </footer>
 
   <!--
     - custom js link
