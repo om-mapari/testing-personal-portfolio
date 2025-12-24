@@ -1393,26 +1393,15 @@
 
 
 
-
   <!--
-    - footer
+    - Initialize EmailJS
   -->
-  <footer
-    style="text-align: center; padding: 2rem 1rem; margin-top: 2rem; border-top: 1px solid hsl(0, 0%, 22%); color: hsl(0, 0%, 62%);">
-    <p style="margin: 0 0 0.5rem 0; font-size: 0.9rem;">
-      © 2025 Om Mapari ·
-      <a href="https://brain.om-mapari.com" rel="me" target="_blank"
-        style="color: hsl(45, 54%, 58%); text-decoration: none;">Knowledge Base</a> ·
-      <a href="https://github.com/om-mapari" target="_blank"
-        style="color: hsl(45, 54%, 58%); text-decoration: none;">GitHub</a> ·
-      <a href="https://linkedin.com/in/om-mapari" target="_blank"
-        style="color: hsl(45, 54%, 58%); text-decoration: none;">LinkedIn</a>
-    </p>
-  </footer>
+  <script>
+    (function () {
+      emailjs.init("AZofwBYwsDlDK4ddS");
+    })();
+  </script>
 
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
 
   <!--

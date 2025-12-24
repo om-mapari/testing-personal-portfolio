@@ -138,8 +138,8 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   // Send form data using EmailJS
-  emailjs.sendForm("service_gxe5bvt", "template_cgvr108", form, "m0UYha0uoe8x8bWWK")
-    .then(function(response) {
+  emailjs.sendForm("service_oq5gn2l", "template_1m98hdo", form, "AZofwBYwsDlDK4ddS")
+    .then(function (response) {
       // If email is sent successfully, show a success message or perform any other action
       console.log("Email sent successfully", response);
       // reset only the message field
@@ -166,7 +166,7 @@ form.addEventListener("submit", function (event) {
         "hideMethod": "fadeOut"
       }
       toastr.success("Message sent successfully");      // You can display a success message or redirect the user to a thank you page here
-    }, function(error) {
+    }, function (error) {
       // If there's an error sending the email, show an error message or perform any other action
       console.error("Error sending email", error);
       // You can display an error message or provide some feedback to the user here
