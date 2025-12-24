@@ -598,8 +598,8 @@ main {
 }
 
 .service-icon-box img[src$=".svg"] {
-    width: 40px !important;
-    height: 40px !important;
+    width: 150px !important;
+    height: 150px !important;
     object-fit: contain;
     object-position: center;
 }
