@@ -304,6 +304,26 @@
             </span>
             <span style="color: hsl(45, 54%, 58%); font-size: 1rem; transition: transform 0.25s ease;">→</span>
           </a>
+
+          <a href="./Om_Mapari_Resume.pdf" target="_blank" rel="noopener" class="resume-download-card" style="
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 1rem;
+            padding: 0.875rem 1.25rem;
+            background: linear-gradient(135deg, hsl(45, 54%, 58%, 0.1), hsl(45, 54%, 58%, 0.05));
+            border-radius: 10px;
+            border: 1px solid hsl(45, 54%, 58%, 0.3);
+            text-decoration: none;
+            transition: all 0.25s ease;
+          ">
+            <span style="font-size: 1.25rem;">📄</span>
+            <span style="flex: 1; color: hsl(0, 0%, 84%); font-size: 0.9rem;">
+              <strong style="color: hsl(45, 54%, 58%);">Download Resume</strong> — Get my latest CV in PDF format
+            </span>
+            <span style="color: hsl(45, 54%, 58%); font-size: 1rem; transition: transform 0.25s ease;">↓</span>
+          </a>
+
           <style>
             .knowledge-base-card:hover {
               border-color: hsl(45, 54%, 58%, 0.4);
@@ -313,6 +333,17 @@
 
             .knowledge-base-card:hover div:last-child {
               transform: translateX(4px);
+            }
+
+            .resume-download-card:hover {
+              border-color: hsl(45, 54%, 58%, 0.6);
+              transform: translateY(-2px);
+              box-shadow: 0 8px 24px hsl(45, 54%, 58%, 0.2);
+              background: linear-gradient(135deg, hsl(45, 54%, 58%, 0.15), hsl(45, 54%, 58%, 0.08));
+            }
+
+            .resume-download-card:hover span:last-child {
+              transform: translateY(2px);
             }
           </style>
         </section>
@@ -575,66 +606,91 @@
 
         <header>
           <h2 class="h2 article-title">📝 Resume</h2>
+          <a href="./Om_Mapari_Resume.pdf" target="_blank" rel="noopener" class="resume-download-btn" style="
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background: hsl(45, 54%, 58%);
+            color: hsl(0, 0%, 0%);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 12px hsl(45, 54%, 58%, 0.3);
+          ">
+            <ion-icon name="download-outline" style="font-size: 1.2rem;"></ion-icon>
+            <span>Download PDF Resume</span>
+          </a>
+          <style>
+            .resume-download-btn:hover {
+              background: hsl(45, 54%, 65%);
+              transform: translateY(-2px);
+              box-shadow: 0 6px 16px hsl(45, 54%, 58%, 0.4);
+            }
+          </style>
         </header>
-        <section class="timeline">
+        <section class="timeline"></section>
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="book-outline"></ion-icon>
           </div>
 
-          <ol class="timeline-list">
+          <h3 class="h3">Experience</h3>
+        </div>
 
-            <li class="timeline-item">
-              <h4 class="h4">Barclays</h4>
-              <h5 class="h5 timeline-item-title">SDE 2 - BA4</h5>
+        <ol class="timeline-list">
 
-              <span>March 2025 - Present | Total Tenure: 2 years 6 months</span>
+          <li class="timeline-item">
+            <h4 class="h4">Barclays</h4>
+            <h5 class="h5 timeline-item-title">SDE 2 - BA4</h5>
 
-              <p class="timeline-text">
-                • Led Amazon Arrow Card development with multi-region AWS deployment across US, UK, and Germany<br>
-                • Architected and implemented DynamoDB & DocumentDB Backup and Restore Solution (approved by CTO)<br>
-                • Created comprehensive AWS Health & Arrow Card Journey Dashboards for real-time visibility<br>
-                • Driving cost optimization initiatives and cloud infrastructure improvements
-              </p>
+            <span>March 2025 - Present | Total Tenure: 2 years 6 months</span>
 
-            </li>
+            <p class="timeline-text">
+              • Led Amazon Arrow Card development with multi-region AWS deployment across US, UK, and Germany<br>
+              • Architected and implemented DynamoDB & DocumentDB Backup and Restore Solution (approved by CTO)<br>
+              • Created comprehensive AWS Health & Arrow Card Journey Dashboards for real-time visibility<br>
+              • Driving cost optimization initiatives and cloud infrastructure improvements
+            </p>
 
-            <li class="timeline-item">
-              <h4 class="h4">Barclays</h4>
-              <h5 class="h5 timeline-item-title">SDE 1 - BA3</h5>
+          </li>
 
-              <span>July 2023 - March 2025</span>
+          <li class="timeline-item">
+            <h4 class="h4">Barclays</h4>
+            <h5 class="h5 timeline-item-title">SDE 1 - BA3</h5>
 
-              <p class="timeline-text">
-                • Automated the creation of 1,500+ AWS CloudWatch alarms in less than 1 minute<br>
-                • Cut AWS costs by 40% through auto-discount tagging and EC2 auto-shutdown automation<br>
-                • Built secure CI/CD pipelines integrating SonarQube, Veracode, Prisma, reducing deployment failures by
-                30%<br>
-                • Developed monitoring solutions and automation tools for cloud infrastructure
-              </p>
+            <span>July 2023 - March 2025</span>
 
-            </li>
+            <p class="timeline-text">
+              • Automated the creation of 1,500+ AWS CloudWatch alarms in less than 1 minute<br>
+              • Cut AWS costs by 40% through auto-discount tagging and EC2 auto-shutdown automation<br>
+              • Built secure CI/CD pipelines integrating SonarQube, Veracode, Prisma, reducing deployment failures by
+              30%<br>
+              • Developed monitoring solutions and automation tools for cloud infrastructure
+            </p>
 
-            <li class="timeline-item">
-              <h4 class="h4">Finarkein Analytics</h4>
-              <h5 class="h5 timeline-item-title">Backend Developer Intern</h5>
+          </li>
 
-              <span>April 2023 - June 2023</span>
+          <li class="timeline-item">
+            <h4 class="h4">Finarkein Analytics</h4>
+            <h5 class="h5 timeline-item-title">Backend Developer Intern</h5>
 
-              <p class="timeline-text">
-                • Built and updated REST APIs for the FIP (Financial Information Provider) side in Account Aggregator
-                ecosystem<br>
-                • Implemented Kafka queues for handling consent-based data flow between financial institutions<br>
-                • Optimized backend services for improved data retrieval and processing performance
-              </p>
+            <span>April 2023 - June 2023</span>
 
-            </li>
+            <p class="timeline-text">
+              • Built and updated REST APIs for the FIP (Financial Information Provider) side in Account Aggregator
+              ecosystem<br>
+              • Implemented Kafka queues for handling consent-based data flow between financial institutions<br>
+              • Optimized backend services for improved data retrieval and processing performance
+            </p>
 
-          </ol>
+          </li>
+
+        </ol>
 
         </section>
         <section class="timeline">
