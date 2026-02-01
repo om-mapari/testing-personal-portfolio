@@ -1,0 +1,242 @@
+\documentclass[letterpaper,11pt]{article}
+\setlength{\footskip}{4.08003pt}
+
+% ========== PACKAGES ==========
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{anyfontsize}
+\usepackage[sfdefault]{roboto}
+
+% ========== SETTINGS ==========
+\renewcommand{\baselinestretch}{0.95}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-0.85in}
+\addtolength{\textheight}{2.7in}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Multicol settings
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Hyperlink settings
+\hypersetup{
+    colorlinks=true,
+    linkcolor=white,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+% Custom colors
+\definecolor{myblue}{RGB}{0, 0, 238}
+
+% ========== CUSTOM COMMANDS ==========
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#3} $|$ \textit{\small#1} & \textbf{\small #2} $|$ \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+% ========== DOCUMENT BEGINS ==========
+\begin{document}
+
+% ========== HEADER ==========
+\begin{center}
+  \resizebox{\textwidth}{!}{%
+    {\Huge \scshape Om Mapari}\hspace{6pt}%
+    \faPhone\ \href{tel:+918788520952}{+918788520952}\hspace{4pt}%
+    \faEnvelope\ \href{mailto:devom230@gmail.com}{devom230@gmail.com}\hspace{4pt}%
+    \faBrain\ \href{https://brain.om-mapari.com}{Brain}\hspace{4pt}%
+    \faLinkedin\ \href{https://www.linkedin.com/in/om-mapari/}{LinkedIn}\hspace{4pt}%
+    \faGithub\ \href{https://github.com/om-mapari}{GitHub}\hspace{4pt}%
+    \faUserTie\ \href{https://om-mapari.com/}{Portfolio}%
+  }
+\end{center}
+
+% ========== PROFESSIONAL EXPERIENCE ==========
+\section{Professional Experience}
+\resumeSubHeadingListStart
+  
+  % Barclays
+  \resumeSubheading
+    {DevOps \& AWS Cloud Engineer}{07/2023 - Present}
+    {\href{https://home.barclays//}{\textbf{Barclays}}}{Hybrid}
+    \resumeItemListStart
+      \resumeItem{Developed \textbf{DynamoDB and DocumentDB Backup and Restore} Solution for Disaster Recovery within RTO/RPO thresholds, presented in barclays design forum adopted Barclays-wide, ensuring 100\% recovery compliance.}
+      \resumeItem{Automated \textbf{1,500+ AWS CloudWatch alarms} creation within less than 1 min, improving system monitoring and alerting.}
+      \resumeItem{Led \textbf{multi-region} deployment for Arrow Card using \textbf{ECS} microservices, improving High Availability and reducing latency for global traffic patterns.}
+      \resumeItem{Built secure \textbf{CI/CD pipelines} using \textbf{GitLab and Jenkins}, integrated with  Security scanning tools \textbf{SonarQube, Veracode}, and \textbf{Prisma} for vulnerability checks, reducing deployment failures by \textbf{30\%}.}
+      \resumeItem{Executed No-Downtime Deployments: Integrated \textbf{Blue-Green and Canary strategies} into the system, advised leadership, aligned cross-domain teams, and ensured uninterrupted user experience -earning Barclays-wide recognition.}
+      \resumeItem{Reduced AWS operational cost by \textbf{40\%} by creating \textbf{auto-discount tagging} and \textbf{EC2 auto-shutdown} during non-working hours.}
+      \resumeItem{Created real-time \textbf{AWS Health \& Arrow Card Journey Dashboards} for 10+ services using CloudWatch, logs, metrics, and alert}
+      \resumeItem{Enhanced alert accuracy by \textbf{80\%} by implementing alert \textbf{suppression \& aggregation}, reducing false positives}
+      \resumeItem{Automated \textbf{EC2 AMI refreshes} to keep patched, consistent images, improving security compliance and reducing}
+      \resumeItem{Bootstrapped multiple AWS accounts with secure \textbf{VPC Networking, IAM Policy, and foundational infra}.}
+      \resumeItem{Other automations: \textbf{ECR-Nexus sync, cloud Infra inventory} tracking, and \textbf{prod vs non-prod comparisons}.}
+    \resumeItemListEnd
+
+  % Finarkein Analytics
+  \resumeSubheading
+    {Backend Developer Intern}{04/2023 - 06/2023}
+    {\href{https://finarkein.com/}{Finarkein Analytics}}{Hybrid}
+    \resumeItemListStart
+      \resumeItem{Built and updated \textbf{REST APIs} for the FIP side in the Account Aggregator ecosystem to enhance secure data sharing.}
+      \resumeItem{Implemented \textbf{Kafka queues} for managing \textbf{consent-based data flow} between financial information provider and users.}
+      % \resumeItem{Optimized \textbf{backend services} for improved data retrieval and processing.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+% ========== TECHNICAL SKILLS ==========
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{DevOps}{: terraform Infrastructure-as-Code (IaC), kubernetes, Jenkins, GitLab CI/CD, Docker, Nginx, Linux, GIT, Bitbucket, Observability, DevSecOps, Incident Management, Postman} \\
+    \textbf{In-Depth AWS Knowledge}{: ECS Containerization, EC2, EKS, Lambda, Step Function, DynamoDB, DocumentDB, Auto Scaling, API Gateway, S3, Service Catalog, CloudFormation, VPC, IAM, X-Ray, CloudWatch, EventBridge} \\
+    \textbf{Languages}{: Python, JAVA, JavaScript, TypeScript, C, C++, Bash} \\
+    \textbf{AI}{: BedRock, A2A, MCP, Vector DBs, Workflow Automation, Prompt Eng, RAG, OpenAI API} \\
+    \textbf{Back-End}{: FastAPI, Node Js, Express Js, Spring Boot, MySQL, PostgreSQL, MongoDB} \\
+    \textbf{Front-End}{: HTML, CSS, JS ES6+, React Js, shadcn UI, tailwind css}
+  }}
+\end{itemize}
+\vspace{-16pt}
+
+% ========== CERTIFICATIONS ==========
+\section{Certifications}
+\vspace{-5pt}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}l}
+      \textbf{AWS:} \href{https://www.credly.com/badges/6d0a4dbb-8fa8-458d-a3df-ce49be7a9749/public_url}{AWS Certified Solutions Architect – Associate} (\textbf{900/1000}) &
+      \textbf{KodeKloud:} \href{https://learn.kodekloud.com/user/certificate/19533633-bf40-41a3-8846-fc426c737160}{Docker Training Course} \\[2pt]
+      \textbf{AWS:} \href{https://www.credly.com/badges/3f315185-186f-4c47-8f51-e11f5c8eeaa9/public_url}{AWS Certified Solutions Architect – Professional} (\textbf{910/1000}) &
+      \textbf{KodeKloud:} \href{https://learn.kodekloud.com/user/certificate/a82b8281-af72-44e8-9198-8f3501cde72e}{Amazon Elastic Container Service (AWS ECS)} \\[2pt]
+      \textbf{KodeKloud:} \href{https://learn.kodekloud.com/certificate/4708e7f8-6591-4b6b-a2c1-ddb410984086}{Terraform Training Course} &
+    \end{tabular*}
+  }}
+\end{itemize}
+\vspace{-18pt}
+
+% ========== EDUCATION ==========
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {\href{https://pict.edu/}{Pune Institute of Computer Technology (PICT PUNE)}}{\textbf{GPA: 9}}
+    {Bachelor's Degree in Information Technology}{\textbf{2019 - 2023}}
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+% ========== ACHIEVEMENTS ==========
+\section{Achievements}
+\resumeSubHeadingListStart
+  \item {}
+  \resumeItemListStart
+    \resumeItem{\textbf{\href{https://www.linkedin.com/posts/om-mapari_and-somehow-we-won-it-with-first-place-activity-7337004233746960385-hFm0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC1BfQgBZnSssotDwwB8ASRH8XWPGZarAEA}{1st Place}} Reimagined: The Next Gen Hackathon Partnered with Microsoft Azure}
+    \resumeItem{\textbf{\href{https://www.linkedin.com/posts/om-mapari_itshappeninghere-barclays-barclaysgenaihack-activity-7263591525710766080-GboY/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC1BfQgBZnSssotDwwB8ASRH8XWPGZarAEA}{2nd Place}} GenAI Hack 2.0 Global Hackathon, Barclays (285 teams, 2,000+ participants, 12 locations)}
+    \resumeItem{Kisan ki Awaaz made to \textbf{Top 50} \textbf{\href{https://www.linkedin.com/feed/update/urn:li:activity:7352377479623335936/}{Google Cloud Agentic AI Day}} 2025 (57,000+ developers, 9,100+ ideas)}
+    \resumeItem{\textbf{\href{https://www.linkedin.com/feed/update/urn:li:activity:7423038411600609280/}{3rd Place}} GenAI Hack 2.0 Global Hackathon, Barclays (285 teams, 2,000+ participants, 12 locations)}
+    \resumeItem{Received Barclays BUK Tech India \textbf{\href{https://drive.google.com/file/d/1qfNqk72s50TIyt6q1SeiaXuAe7VR8cr9/view}{Engineering Star Award}} for DynamoDB Backup Restore Solution}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% ========== PROJECTS ==========
+\section{Projects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+
+   % Shello CLI
+  \resumeProjectHeading
+    {{\href{https://github.com/om-mapari/shello-cli}{\textbf{\faGithub \color{myblue}{ Shello CLI}}}} $|$ \emph{\textbf{Skillset:} Python, AI, Gemini, jqlang, rich, AWS CLI}}{}
+  \resumeItemListStart
+    \resumeItem{AI-powered CLI companion that troubleshoots issues across AWS, GCP, Azure, Docker, infrastructure, Prometheus, Grafana, and infrastructure through natural conversation.}
+  \resumeItemListEnd
+  \vspace{-15pt}
+
+  % OffersHub
+  \resumeProjectHeading
+    {{\href{https://github.com/om-mapari/OffersHub}{\textbf{\faGithub \color{myblue}{ OffersHub}}}} $|$ \href{https://offershub.om-mapari.com/}{\textbf{Live} \faLink} $|$ \emph{\textbf{Skillset:} OpenAI, React, Azure, TypeScript, Python, FastAPI, PostgreSQL, Docker, Tailwind, MCP}}{}
+  \resumeItemListStart
+    \resumeItem{AI-powered offer lifecycle management platform for financial services enabling personalized, targeted promotions with seamless creation, approval workflows, and customer engagement tracking.}
+  \resumeItemListEnd
+  \vspace{-15pt}
+
+ 
+  % Magic Youth
+  \resumeProjectHeading
+    {{\href{https://github.com/om-mapari/magic-youth}{\textbf{\faGithub \color{myblue}{ Magic Youth}}}} $|$ \href{https://magic-youth.om-mapari.com/}{\textbf{Live} \faLink} $|$ \emph{\textbf{Skillset:} AI, React, TypeScript, Python, FastAPI, PostgreSQL, Docker, Tailwind}}{}
+  \resumeItemListStart
+    \resumeItem{AI-powered youth mobilization platform for Magic Bus India Foundation with ML-driven enrollment targeting, automated WhatsApp onboarding, dropout prediction, and job placement intelligence achieving 85\% retention and 70\% placement rates.}
+  \resumeItemListEnd
+  \vspace{-15pt}
+
+  % Movie Recommender System (Commented)
+  % \resumeProjectHeading
+  %   {{\href{https://github.com/om-mapari/Movie-recommender-system}{\textbf{\faGithub \color{myblue}{ Movie Recommender System}}}} $|$ \emph{\textbf{Skillset:} Python, pandas, NumPy, scikit-learn, Streamlit}}{\href{https://drive.google.com/file/d/1d_AvqAGGkTDGVKtm6HLbZ2wsGcWZIDhJ/view?usp=sharing}{Report, }\href{https://docs.google.com/presentation/d/1SZlC8s_PDE1fD3Gr65jSRycsDTyfz1a7/edit?usp=sharing\&ouid=113100764783328976705\&rtpof=true\&sd=true}{PPT}}
+  % \resumeItemListStart
+  %   \resumeItem{Implemented \textbf{content-based filtering} using \textbf{cosine similarity} and \textbf{vectorization} to recommend movies.}
+  % \resumeItemListEnd
+  % \vspace{-15pt}
+
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+\end{document}
