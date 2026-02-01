@@ -555,6 +555,7 @@ main {
  */
 
 .service {
+    margin-top: 35px;
     margin-bottom: 35px;
 }
 
@@ -854,6 +855,7 @@ main {
  */
 
 .timeline {
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 

@@ -241,7 +241,7 @@ Page 3 of 3
 \begin{center}
     {\Huge \scshape Om Mapari} \\ \vspace{1pt}
     
-    \small \raisebox{-0.1\height}\faPhone\ \href{tel:+918788520952}{+91 8788520952} ~ \href{mailto:mapariom05@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{mapariom05@gmail.com}} ~ 
+    \small \href{mailto:mapariom05@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{mapariom05@gmail.com}} ~ 
     \href{https://www.linkedin.com/in/om-mapari/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/om-mapari/}}  ~
     \href{https://github.com/om-mapari}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/om-mapari}}  ~
     % \href{https://leetcode.com/om-mapari/}{\raisebox{-0.2\height}\faLink\ \underline{leetcode}}

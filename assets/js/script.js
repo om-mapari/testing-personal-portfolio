@@ -9,6 +9,11 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
+// Open sidebar by default on mobile (screens smaller than 1250px)
+if (window.innerWidth < 1250) {
+  sidebar.classList.add("active");
+}
+
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
