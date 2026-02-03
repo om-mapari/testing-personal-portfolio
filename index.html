@@ -147,6 +147,36 @@
 
         <div class="separator"></div>
 
+        <a href="./Om_Mapari_Resume.pdf" target="_blank" rel="noopener" class="sidebar-resume-btn" style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          margin: 1rem 0;
+          padding: 0.75rem 1rem;
+          background: hsl(45, 54%, 58%);
+          color: hsl(0, 0%, 0%);
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 0.85rem;
+          transition: all 0.25s ease;
+          box-shadow: 0 4px 12px hsl(45, 54%, 58%, 0.3);
+        ">
+          <ion-icon name="download-outline" style="font-size: 1.1rem;"></ion-icon>
+          <span>Download Resume</span>
+        </a>
+
+        <style>
+          .sidebar-resume-btn:hover {
+            background: hsl(45, 54%, 65%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px hsl(45, 54%, 58%, 0.4);
+          }
+        </style>
+
+        <div class="separator"></div>
+
         <ul class="social-list">
 
           <li class="social-item">
@@ -291,7 +321,8 @@
             <span style="color: hsl(45, 54%, 58%); font-size: 1rem; transition: transform 0.25s ease;">→</span>
           </a>
 
-          <a href="./Om_Mapari_Resume.pdf" target="_blank" rel="noopener" class="resume-download-card" style="
+          <a href="https://github.com/om-mapari/shello-cli" target="_blank" rel="noopener" class="shello-cli-card"
+            style="
             display: flex;
             align-items: center;
             gap: 0.75rem;
@@ -303,11 +334,12 @@
             text-decoration: none;
             transition: all 0.25s ease;
           ">
-            <span style="font-size: 1.25rem;">📄</span>
+            <span style="font-size: 1.25rem;">🐚</span>
             <span style="flex: 1; color: hsl(0, 0%, 84%); font-size: 0.9rem;">
-              <strong style="color: hsl(45, 54%, 58%);">Download Resume</strong> — Get my latest CV in PDF format
+              <strong style="color: hsl(45, 54%, 58%);">Currently building</strong> — Shello CLI. Say hello to shello,
+              an AI assistant for debugging real systems and massive logs.
             </span>
-            <span style="color: hsl(45, 54%, 58%); font-size: 1rem; transition: transform 0.25s ease;">↓</span>
+            <span style="color: hsl(45, 54%, 58%); font-size: 1rem; transition: transform 0.25s ease;">→</span>
           </a>
 
           <style>
@@ -317,19 +349,19 @@
               box-shadow: 0 8px 24px hsl(0, 0%, 0%, 0.3);
             }
 
-            .knowledge-base-card:hover div:last-child {
+            .knowledge-base-card:hover span:last-child {
               transform: translateX(4px);
             }
 
-            .resume-download-card:hover {
+            .shello-cli-card:hover {
               border-color: hsl(45, 54%, 58%, 0.6);
               transform: translateY(-2px);
               box-shadow: 0 8px 24px hsl(45, 54%, 58%, 0.2);
               background: linear-gradient(135deg, hsl(45, 54%, 58%, 0.15), hsl(45, 54%, 58%, 0.08));
             }
 
-            .resume-download-card:hover span:last-child {
-              transform: translateY(2px);
+            .shello-cli-card:hover span:last-child {
+              transform: translateX(4px);
             }
           </style>
         </section>
@@ -592,31 +624,6 @@
 
         <header>
           <h2 class="h2 article-title">📝 Resume</h2>
-          <a href="./Om_Mapari_Resume.pdf" target="_blank" rel="noopener" class="resume-download-btn" style="
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-top: 1rem;
-            padding: 0.75rem 1.5rem;
-            background: hsl(45, 54%, 58%);
-            color: hsl(0, 0%, 0%);
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.25s ease;
-            box-shadow: 0 4px 12px hsl(45, 54%, 58%, 0.3);
-          ">
-            <ion-icon name="download-outline" style="font-size: 1.2rem;"></ion-icon>
-            <span>Download PDF Resume</span>
-          </a>
-          <style>
-            .resume-download-btn:hover {
-              background: hsl(45, 54%, 65%);
-              transform: translateY(-2px);
-              box-shadow: 0 6px 16px hsl(45, 54%, 58%, 0.4);
-            }
-          </style>
         </header>
 
         <section class="timeline">
