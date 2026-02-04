@@ -175,3 +175,32 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+// Profile image modal functionality
+const profileAvatar = document.querySelector("#profile-avatar");
+const profileModalContainer = document.querySelector("[data-profile-modal]");
+const profileOverlay = document.querySelector("[data-profile-overlay]");
+const profileCloseBtn = document.querySelector("[data-profile-close-btn]");
+
+// Function to toggle profile modal
+const toggleProfileModal = function () {
+  profileModalContainer.classList.toggle("active");
+  profileOverlay.classList.toggle("active");
+}
+
+// Open modal when clicking on profile image
+if (profileAvatar) {
+  profileAvatar.addEventListener("click", toggleProfileModal);
+}
+
+// Close modal when clicking close button
+if (profileCloseBtn) {
+  profileCloseBtn.addEventListener("click", toggleProfileModal);
+}
+
+// Close modal when clicking on overlay
+if (profileOverlay) {
+  profileOverlay.addEventListener("click", toggleProfileModal);
+}

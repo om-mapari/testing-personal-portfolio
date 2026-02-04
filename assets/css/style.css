@@ -2207,3 +2207,134 @@ textarea.form-input::-webkit-resizer {
         max-width: 700px;
     }
 }
+
+/*-----------------------------------*\
+  #PROFILE IMAGE MODAL
+\*-----------------------------------*/
+
+.profile-modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.profile-modal-container.active {
+    pointer-events: all;
+    visibility: visible;
+}
+
+.profile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: hsl(0, 0%, 5%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1;
+    transition: var(--transition-1);
+}
+
+.profile-overlay.active {
+    opacity: 0.9;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.profile-modal {
+    background: var(--eerie-black-2);
+    position: relative;
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid var(--jet);
+    border-radius: 20px;
+    box-shadow: var(--shadow-5);
+    transform: scale(0.8);
+    opacity: 0;
+    transition: var(--transition-1);
+    z-index: 2;
+    max-width: 90%;
+    max-height: 90vh;
+}
+
+.profile-modal-container.active .profile-modal {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.profile-modal .modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--onyx);
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-2);
+    font-size: 18px;
+    opacity: 0.7;
+    transition: var(--transition-1);
+    z-index: 3;
+}
+
+.profile-modal .modal-close-btn:hover,
+.profile-modal .modal-close-btn:focus {
+    opacity: 1;
+    background: var(--orange-yellow-crayola);
+    color: var(--smoky-black);
+}
+
+.profile-modal-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-modal-img img {
+    max-width: 100%;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    border-radius: 16px;
+    object-fit: contain;
+}
+
+/* Add cursor pointer to avatar */
+#profile-avatar {
+    cursor: pointer;
+    transition: var(--transition-1);
+}
+
+#profile-avatar:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (min-width: 580px) {
+    .profile-modal {
+        padding: 30px;
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-modal {
+        max-width: 700px;
+    }
+}
