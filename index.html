@@ -867,9 +867,17 @@
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">LeetCode</h4>
               <a href="https://leetcode.com/om-mapari" target="_blank" class="timeline-link">leetcode.com/om-mapari</a>
-              <p class="timeline-text">
+              <p class="timeline-text" id="leetcode-stats-text">
                 Active competitive programming profile with consistent problem-solving practice.
               </p>
+              <div id="leetcode-solved-container" style="display: none; align-items: center; gap: 8px; margin-top: 8px; font-size: var(--fs-7);">
+                <span class="leetcode-stats-badge" style="color: var(--light-gray);">
+                  Solved: <strong id="leetcode-total" style="color: var(--white-1); font-weight: var(--fw-600);">617</strong> 
+                  (<span class="easy" style="font-weight: var(--fw-500);">● Easy: <span id="leetcode-easy">0</span></span>, 
+                   <span class="medium" style="font-weight: var(--fw-500);">● Med: <span id="leetcode-medium">0</span></span>, 
+                   <span class="hard" style="font-weight: var(--fw-500);">● Hard: <span id="leetcode-hard">0</span></span>)
+                </span>
+              </div>
             </li>
 
             <li class="timeline-item">

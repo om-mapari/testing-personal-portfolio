@@ -204,3 +204,56 @@ if (profileCloseBtn) {
 if (profileOverlay) {
   profileOverlay.addEventListener("click", toggleProfileModal);
 }
+
+// Fetch and display LeetCode solved stats
+async function updateLeetCodeStats() {
+  const username = "om-mapari";
+  const primaryUrl = `https://leetcode-api-faisalshohag.vercel.app/${username}`;
+  const fallbackUrl = `https://alfa-leetcode-api.onrender.com/${username}/solved`;
+
+  const totalEl = document.getElementById("leetcode-total");
+  const easyEl = document.getElementById("leetcode-easy");
+  const mediumEl = document.getElementById("leetcode-medium");
+  const hardEl = document.getElementById("leetcode-hard");
+  const containerEl = document.getElementById("leetcode-solved-container");
+
+  if (!totalEl || !easyEl || !mediumEl || !hardEl || !containerEl) return;
+
+  // Helper to update the UI elements
+  const updateUI = (total, easy, medium, hard) => {
+    totalEl.textContent = total;
+    easyEl.textContent = easy;
+    mediumEl.textContent = medium;
+    hardEl.textContent = hard;
+    containerEl.style.display = "flex";
+  };
+
+  // Try Primary API
+  try {
+    const res = await fetch(primaryUrl);
+    if (!res.ok) throw new Error("Primary API failed");
+    const data = await res.json();
+    if (data && typeof data.totalSolved === "number") {
+      updateUI(data.totalSolved, data.easySolved, data.mediumSolved, data.hardSolved);
+      return;
+    }
+  } catch (err) {
+    console.warn("Primary LeetCode API failed, trying fallback...", err);
+  }
+
+  // Try Fallback API
+  try {
+    const res = await fetch(fallbackUrl);
+    if (!res.ok) throw new Error("Fallback API failed");
+    const data = await res.json();
+    if (data && typeof data.solvedProblem === "number") {
+      updateUI(data.solvedProblem, data.easySolved, data.mediumSolved, data.hardSolved);
+      return;
+    }
+  } catch (err) {
+    console.error("All LeetCode APIs failed, keeping fallback static values.", err);
+  }
+}
+
+// Call LeetCode stats update on DOM Content Loaded
+document.addEventListener("DOMContentLoaded", updateLeetCodeStats);

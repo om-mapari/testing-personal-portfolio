@@ -2338,3 +2338,25 @@ textarea.form-input::-webkit-resizer {
         max-width: 700px;
     }
 }
+
+/* LeetCode Dynamic Stats UI Fix */
+#leetcode-solved-container span {
+    display: inline !important;
+}
+
+/* LeetCode Dynamic Stats UI Colors */
+#leetcode-solved-container .easy,
+#leetcode-solved-container .easy span,
+#leetcode-solved-container #leetcode-easy {
+    color: #00b8a3 !important;
+}
+#leetcode-solved-container .medium,
+#leetcode-solved-container .medium span,
+#leetcode-solved-container #leetcode-medium {
+    color: #ffc01e !important;
+}
+#leetcode-solved-container .hard,
+#leetcode-solved-container .hard span,
+#leetcode-solved-container #leetcode-hard {
+    color: #ef4743 !important;
+}
